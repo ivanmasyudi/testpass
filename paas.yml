@@ -1,0 +1,18 @@
+version: 1
+
+settings:
+  timeout: 300
+
+stages:
+  install:
+    skip: true  # No dependencies for simple static site
+
+  test:
+    skip: true
+
+  build:
+    commands:
+      - echo "No build needed for static HTML"
+
+# Output directory is 'src' where index.html is located
+# Set outputDir to 'src' in project settings
